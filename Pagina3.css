@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(4, 104, 52);
+    color:rgb(226, 232, 235);      
+}
+
+h1{
+    font-family: 'Changa One', cursive;
+
+}
+
+
+p{
+font-style: normal;
+font-family: 'Monda', sans-serif;
+
+font-size: larger;
+color: transparent;
+background: white;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+text-shadow: 0px 3px 3px rgba(255,255,255,0.5);   
+}
+
+h2{
+   /* text-shadow: 2px 2px 10px rgb(150, 202, 241);
+    letter-spacing: 5px;  */
+   
+   /*text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+   color: white;
+   font: 1.5em Georgia;   */
+   font-family: 'Fugaz One', cursive;
+/*
+color: #FFFFFF;
+background: #232323;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+   */
+}
+
+a{
+    color:beige;
+}
