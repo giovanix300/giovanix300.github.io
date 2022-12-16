@@ -1,0 +1,153 @@
+/* Import */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+/* Basic Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #dddfde;
+}
+
+/* Social Presentation */
+h2.title {
+	font-family: "Quicksand", sans-serif;
+	font-size: 24px;
+	font-weight: 200;
+	font-weight: 300;
+	color: #000000;
+	text-align: center;
+	padding: 100px 0 0 0;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+h3.title {
+	font-family: "Quicksand", sans-serif;
+	font-size: 18px;
+	font-weight: 200;
+	font-weight: 300;
+	color: #000000;
+	text-align: center;
+	padding: 10px 0 0 0;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.social .line {
+	position: absolute;
+	top: 0; left: 0px;
+	width: 100%; height: 5px;
+	background: #f3f7f3;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	z-index: 0;
+}
+.social ul {
+	position: fixed;
+	left: 55%; margin-left: -216px;
+	list-style: none;
+	color: #000;
+}
+.social ul li {
+	float: left;
+}
+.social ul li a {
+	position: relative;
+	float: left;
+	background: #f9faf9;
+	width: 48px; height: 48px;
+	text-align: center;
+	color: rgb(85, 32, 32);
+	padding: 0 0 30px 0;
+}
+.social ul li a:hover {
+	color: #fff;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin {
+	padding: 10px 0 0 0;
+}
+
+/* Pseudo Elements */
+.social ul li a:after {
+	content: "";
+	position: absolute;
+	bottom: 0px; left: 0;
+	width: 1px; height: 1px;
+	border: 24px solid transparent;
+	border-bottom: 24px solid #dddfde;
+	z-index: 0;
+}
+
+/* Hover */
+.social ul li.facebook a:hover {
+	background: #3b5998;
+}
+.social ul li.twitter a:hover {
+	background: #44ccf6;
+}
+.social ul li.codepen a:hover {
+	background: #cccccc;
+}
+.social ul li.youtube a:hover { 
+	background: #881212; 
+}
+.social ul li.instagram a:hover { 
+	background: #66269e; 
+}
+.social ul li.pinterest a:hover {
+	background: #c3042b;
+}
+.neon{
+    font-size: 6em;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #6d4017,
+    0 0 25px #571b19, 
+    0 0 50px #693d13,
+    0 0 100px #691414;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+/* .neon:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4, 
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+} */
+#bt{
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem rgb(5, 5, 5),
+    -.5rem -.5rem 1rem rgb(252, 250, 250)
+    
+}
+#bt :hover{
+    box-shadow: .5rem .5rem 1rem rgb(26, 25, 25),
+    -.5rem -.5rem 1rem rgb(253, 253, 253) 
+}
+#bt:active{
+    box-shadow: .2rem .2rem 1rem rgb(245, 244, 244),
+    -.2rem -.2rem 1rem rgb(17, 17, 17)
+}
+
+a {
+    color: #161616;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#501212; 
+     text-decoration:none; 
+     cursor:pointer;  
+}

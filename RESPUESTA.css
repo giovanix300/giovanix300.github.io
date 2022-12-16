@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+#bt{
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+    -.5rem -.5rem 1rem #fff
+    
+}
+#bt :hover{
+    box-shadow: .5rem .5rem 1rem #fff,
+    -.5rem -.5rem 1rem #ccc 
+}
+#bt:active{
+    box-shadow: .2rem .2rem 1rem #ccc,
+    -.2rem -.2rem 1rem #fff
+}
+
+a {
+    color: #e2dcda;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#ffffff; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+h1{
+    color: #ffffff;
+}

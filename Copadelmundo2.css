@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+body {
+  background: #212121;
+  padding: 50px 0;
+}
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  paddin: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #f3efef;
+  border-right: 3px solid #fff9f9;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #f4f7f3;
+  border-left: 3px solid #f5fcf2;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #752626;
+}0
+
+#Seccion{
+    float:left;  width: 70%; background-color: rgb(3, 3, 3);
+    min-height:600px;
+}
+
+.Articulo{
+    color:rgb(247, 247, 247); margin-top: 10px; margin-bottom: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+:root {
+  --header-font: Lalezar, sans-serif;
+  --hand-font: Hurricane, cursive;
+    
+  background: #111;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 700px;
+  margin: 5em auto;
+}
+
+.synthwave-draw {
+  font-family: var(--hand-font);
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ed1ca6;
+  background: linear-gradient(#f590e3 15%, #ed1ca6 20%, #f513aa 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  transform: translate(5%, 5px);
+  filter: drop-shadow(0 0 5px #f513aa);
+  z-index: 5;
+}
+
+.synthwave-title {
+  --border-color: #7bbbf4;
+  
+  display: inline-flex;
+  font-family: var(--header-font);
+  font-size: 8rem;
+  height: 80px;
+  line-height: 80%;
+  background: 
+    linear-gradient(to bottom, #001a4e 15%, #003eaa 25%, #fffffa 50%, #000100 50%, #8a148c 75%, #deaae3),
+    linear-gradient(to bottom, #fff 37%, #242960 38%, #fff 95%);
+  color: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:
+    drop-shadow(-2px 0 0 var(--border-color))
+    drop-shadow(2px 0 0 var(--border-color))
+    drop-shadow(0 2px 0 var(--border-color))
+    drop-shadow(0 -2px 0 var(--border-color))
+    drop-shadow(5px 5px 3px #000)
+    drop-shadow(0 0 4px #0e0480);
+}
+header{
+  background-color: chocolate; color:darkblue;
+  text-align: center;
+  width: 100%; height: 100px;  margin:0px;
+  line-height: 100px;  font-family:fantasy;
+  border-bottom: 3px dashed burlywood;
+}
+
+nav ul li{
+  float: left;
+  list-style: none;
+  margin: 10px;   line-height: 30px;
+  font-family: fantasy;
+  color:rgb(255, 255, 248);
+}
+
+*{ margin: 0px;  padding: 0px; }
+.limpiar{  clear:both; }
+
+#Seccion{
+  float:right;  width: 80%; background-color: #212121;
+  min-height:600px;
+}
+
+.Articulo{
+  color:rgb(248, 255, 248); margin-top: 15px; margin-bottom: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+aside{
+  float:left;    width: 20%;
+  background-color:  #212121;
+  min-height: 1900px;}
+h2{
+  color:#fff;
+  text-align: center;
+}
+
+li{
+  color: #fff9f9;
+}
+a {
+  color: #6d3a2b;
+  text-decoration: none;
+}
+
+a:hover 
+{
+   color:#ffffff; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+  
+  .imagen:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;}
+  
+    .img2{
+        height: 200px;
+        width: 300px;
+        margin: 15px 0;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+    }
+     
+    .img2:hover{
+        height: 233px;
+        width: 400px;
+        margin-left: -50px;
+    }
+    p{
+      font-style:oblique;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+      font-size:medium;
+      color:#f4f7f3;
+      background: rgb(224, 188, 188);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      text-shadow: 0px 3px 3px rgba(255,255,255,0.5);   
+      }
+      
+
+.img3:hover{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5)
+}
+.img3{
+  width: 250px;  height: 220px;
+  position: relative;
+  animation-name: img3;
+  animation-duration:30s;
+  animation-iteration-count:3;
+}
+@keyframes img3 {
+  0%{top:200px;  left:200px}
+  75%{top:0px;  left:0px}
+    }
+    h1{
+      color: #ffffff;
+      padding: 0cm;
+    }
+   
+    h1 {
+      display: inline-block; 
+      position: relative; 
+      font: 1000 3em/1.2 Rubik, sans-serif; 
+      padding: 0 .5em; 
+      white-space: nowrap; 
+      color:linear-gradient(to bottom right, rgb(253, 251, 251), rgb(97, 36, 25));
+      /*outline: solid 1px maroon; */
+
+      }
+      
+      h1 div {
+      position: absolute; 
+      top: 0; left: 120px; 
+      padding: inherit; 
+      font: inherit; 
+      white-space: inherit; 
+      background: rgba(7, 7, 7, 0.562); 
+      animation-name: bravo; 
+      animation-duration: 1000ms; 
+      animation-iteration-count: infinite; 
+      animation-direction: alternate; 
+      animation-timing-function: ease-in-out; 
+      font-family: 'Anton', sans-serif;
+      }
+      
+      @keyframes bravo {
+        from {top: 0px; }
+        to {top: 10px; }
+      }
+      h2 {  
+        font-size: 72px;  
+        background: -webkit-linear-gradient(left top, rgb(238, 235, 235), rgb(82, 18, 18));
+        background: linear-gradient(to bottom right, rgb(253, 251, 251), rgb(97, 36, 25));
+        -webkit-background-clip: text;  
+        -webkit-text-fill-color: transparent;  
+        font-size:xx-large;
+        font-family: 'PT Serif', serif;
+font-family: 'Roboto Condensed', sans-serif;
+      }  
+      

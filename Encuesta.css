@@ -1,0 +1,140 @@
+#formulario{
+    font-family: sans-serif;
+    background: #5a0f0d;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom: 5px solid #80160e;
+    margin-bottom:5px; 
+  }
+  /* --------------------------------------------------------------- */
+  /* --------------------------------------------------------------- */
+  /* FORMULARIO: fondo blanco y casillas --------------------------- */
+  form{
+    background-color: white;
+    margin:10px;
+    margin:0 auto;
+    border-radius:19px;
+    width: 40%;
+    /* SECUENCIA: para centrar formulario */
+    position:fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    /* TAMAÑO LETRA: nombre, apellido, e-mail, etc ----- */
+      label{
+        margin-left: 8px;
+        font-size: 12px;
+        padding: 5px;
+        display:block;
+        width: 100%;
+        font-family: sans-serif;
+      }
+    /* -------------------------------------------------- */
+    /* EDICION CADA INPUT: diseño ----------------------- */
+      input{
+        margin-bottom:10px; 
+        width: 95%;
+        padding: 2%;
+        margin-left: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-style: italic; 
+      }
+      /* Cuando da click dentro de un input --------------- */
+        input:focus{
+          background-color: #F2F2F2;
+        }
+      /* -------------------------------------------------- */
+  /* --------------------------------------------------------------- */
+  /* C U E R P O  -------------------------------------------------- */ 
+  body{
+    background-image: linear-gradient(-90deg,#6ABBF7, #BD7CFA);
+  }
+  /* --------------------------------------------------------------- */
+  /* FUNCION DEL BOTON REGISTRARSE --------- */
+  #button {
+          width: 94%;
+          font-family: sans-serif;
+          font-size:15px;
+          font-weight: bolder;
+          background-color: #205ab4;
+          color: #fff;
+          cursor: pointer;
+          margin-bottom:15px;
+          margin-left:10px;
+          border: none;
+          padding: 3%;
+          border-radius: 20px 10px 20px 10px;
+      /* SOMBRA BOTON: darle sommbre al boton "resgistrarse"*/
+          -webkit-box-shadow: 4px 9px 8px -4px rgba(0,0,0,0.75);
+          -moz-box-shadow: 4px 9px 8px -4px rgba(0,0,0,0.75);
+           box-shadow: 4px 9px 8px -4px rgba(0,0,0,0.75);      
+  }
+  #button:hover{
+    background-color: #7FACDE;
+  }
+
+  #noti{
+    
+        background-color: rgb(242, 252, 216);
+        width: 375px;
+        padding: 5px;
+        border-radius: 5px;
+        border-color: blue;
+        font-family: Algerian;
+        font-size: smaller;
+        text-align: center;
+    
+  }
+  h3{
+    color: #BD7CFA;
+  }
+  textarea{
+    width: 700px;
+    height: 200px;
+    background-color: rgb(255, 253, 252);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    border-radius: 15px;
+    border-color: blueviolet;
+  }
+  #bt{
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+    -.5rem -.5rem 1rem #fff
+    
+}
+#bt :hover{
+    box-shadow: .5rem .5rem 1rem #fff,
+    -.5rem -.5rem 1rem #ccc 
+}
+#bt:active{
+    box-shadow: .2rem .2rem 1rem #ccc,
+    -.2rem -.2rem 1rem #fff
+}
+
+a {
+    color: #e2dcda;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#ffffff; 
+     text-decoration:none; 
+     cursor:pointer;  
+}

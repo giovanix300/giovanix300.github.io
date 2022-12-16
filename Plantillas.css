@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+body {
+  background: #212121;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  font-family: 'Titillium Web';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  paddin: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #f3efef;
+  border-right: 3px solid #fff9f9;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #f4f7f3;
+  border-left: 3px solid #f5fcf2;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #752626;
+}0
+
+#Seccion{
+    float:left;  width: 70%; background-color:rgba(0, 0, 0, 0.5);
+    min-height:600px;
+}
+
+.Articulo{
+    color:rgb(247, 247, 247); margin-top: 10px; margin-bottom: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 120px;
+  background: #212121;
+}
+
+.button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: var(--color);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  text-shadow: 0 0 15px var(--color);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.button:hover {
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px var(--color);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--color),
+    0 0 30px var(--color),
+    0 0 60px var(--color);
+}
+
+.button span {
+  position: absolute;
+  background: var(--color);
+  pointer-events: none;
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--color),
+    0 0 20px var(--color),
+    0 0 30px var(--color),
+    0 0 50px var(--color),
+    0 0 100px var(--color);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.button:hover span {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.button span:nth-child(1),
+.button span:nth-child(3) {
+  width: 40px;
+  height: 4px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+
+.button span:nth-child(2),
+.button span:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+
+.button:hover span:nth-child(1),
+.button:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+
+.button span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transform-origin: left;
+}
+
+.button:hover span:nth-child(1) {
+  left: 50%;
+}
+
+.button span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+
+.button:hover span:nth-child(3) {
+  right: 50%;
+}
+
+.button span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -50px;
+  transform-origin: top;
+}
+
+.button:hover span:nth-child(2) {
+  top: 50%;
+}
+
+.button span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -50px;
+  transform-origin: bottom;
+}
+
+.button:hover span:nth-child(4 ) {
+  bottom: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 15vmin;
+  position: absolute;
+  text-align: center;
+}
+
+.border {
+  color: black;  
+  text-shadow:
+    -1px -1px 0 rgb(145, 37, 37), 
+    1px -1px 0 white,
+    -1px 1px 0 rgb(155, 46, 46),
+    1px 1px 0 white;  
+}
+
+.wave {
+  color: rgb(97, 31, 31);
+  animation: wave 3s ease-in-out infinite;
+}
+
+.two {
+  transform: translateY(0.8em);
+}
+
+.three {
+  transform: translateY(-0.8em);
+}
+
+@keyframes wave {
+  0%, 80% {
+    clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+
+  40% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+h5{
+  color: #212121;
+}
+#qatar{
+  text-shadow: 2px 2px 8px #f9f9fc;
+  text-align: center;
+  letter-spacing: 3px;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a {
+  color: #fffcfb;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover 
+{
+   color:#862d2d; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+
+p{
+  font-style: normal;
+  font-family: 'Monda', sans-serif;
+  
+  font-size: larger;
+  color: transparent;
+  background: white;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.5);   
+  }
+  h3{
+    text-align: center;
+  }
+  #senegal{
+    text-shadow: 2px 2px 8px #26974c;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #ecuador{
+    text-shadow: 2px 2px 8px #dee757;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #holanda{
+    text-shadow: 2px 2px 8px #a16622;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #inglaterra{
+    text-shadow: 2px 2px 8px #f3f8f5;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #iran{
+    text-shadow: 2px 2px 8px #26974c;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #usa{
+    text-shadow: 2px 2px 8px #132069;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #gales{
+    text-shadow: 2px 2px 8px #54d37e;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #argentina{
+    text-shadow: 2px 2px 8px #2f94b3;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #arabia{
+    text-shadow: 2px 2px 8px #26974c;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #mexico{
+    text-shadow: 2px 2px 8px #1d5a31;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #polonia{
+    text-shadow: 2px 2px 8px #683608;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #francia{
+    text-shadow: 2px 2px 8px #130e42;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #australia{
+    text-shadow: 2px 2px 8px #1d3279;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  text-shadow: 2px 2px 8px #26974c;
+    
+  }
+  #dinamarca{
+    text-shadow: 2px 2px 8px #c02020;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #tunez{
+    text-shadow: 2px 2px 8px #832020;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #españa{
+    text-shadow: 2px 2px 8px #411f10;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #costa{
+    text-shadow: 2px 2px 8px #83491a;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #alemania{
+    text-shadow: 2px 2px 8px #181a19;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #japon{
+    text-shadow: 2px 2px 8px #ffffff;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #belgica{
+    text-shadow: 2px 2px 8px #330c0a;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #canada{
+    text-shadow: 2px 2px 8px #972626;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #marruecos{
+    text-shadow: 2px 2px 8px #c05838;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #croacia{
+    text-shadow: 2px 2px 8px #8a300d;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #brasil{
+    text-shadow: 2px 2px 8px #1b580f;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #suiza{
+    text-shadow: 2px 2px 8px #571d06;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #camerun
+  {
+    text-shadow: 2px 2px 8px #665b2a;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #serbia{
+    text-shadow: 2px 2px 8px #fcc7b3;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #ghana{
+    text-shadow: 2px 2px 8px #2b8111;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #uruguay{
+    text-shadow: 2px 2px 8px #127bb8;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #portugal{
+    text-shadow: 2px 2px 8px #df2113;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #corea{
+    text-shadow: 2px 2px 8px #fffcfb;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
